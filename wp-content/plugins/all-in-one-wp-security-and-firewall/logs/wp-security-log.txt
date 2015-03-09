@@ -1,0 +1,5 @@
+[12/11/2014 12:50 PM] - FAILURE : Error inserting record into wp_aiowps_login_activity
+[01/05/2015 12:59 PM] - FAILURE : AIOWPSecurity_Installer::run_installer() - Update of option settings failed upon plugin activation!
+[01/06/2015 11:28 AM] - FAILURE : AIOWPSecurity_Installer::run_installer() - Update of option settings failed upon plugin activation!
+[01/15/2015 1:12 PM] - FAILURE : Error inserting record into wp_aiowps_login_activity
+[02/04/2015 1:45 PM] - FAILURE : Error inserting record into wp_aiowps_login_activity

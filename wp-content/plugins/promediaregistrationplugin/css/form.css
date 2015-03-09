@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+label,a, body 
+{
+}
+.err
+{
+	color: red;
+}
+
+#field {
+    margin-left: 0.5em;
+}
+#field, label {
+
+}
+br {
+    clear: both;
+}
+input {
+    border: 1px solid #000000;
+    margin-bottom: 0.5em;
+}
+input.error {
+    border: 1px solid #ff0000;
+}
+label.error {
+    background: url("unchecked.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin-left: 0.3em;
+    padding-left: 16px;
+}
+label.valid {
+    background: url("checked.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.showdiv{
+	display:none;
+}

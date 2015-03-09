@@ -1,0 +1,455 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ 
+#demo{
+    margin: auto;
+    width: 985px;
+}
+
+#demo .clock-wrapper{
+	float : left;
+	margin-right:28px;
+}
+
+#demo .clock-wrapper h1{
+	font-weight:normal;
+	font-size:12px;
+}
+
+#demo .clock-wrapper a{
+	color:#000;
+	text-decoration : none;
+}
+
+.analog {
+	position: relative;
+	width: 150px;
+  margin: auto;
+	background: url(images/clockface.jpg);
+	list-style: none;
+}
+
+.analog,.analog .hour,.analog .min,.analog .sec {
+	height: 150px;
+}
+
+.analog .hour,.analog .min,.analog .sec {
+-webkit-backface-visibility:hidden;
+	position: absolute;
+	width: 8px;
+	top: 0;
+	left: 70.5px;
+  padding: 0;
+}
+
+.analog .sec {
+	background: url(images/sechand.png);
+	z-index: 3;
+}
+
+.analog .min {
+	background: url(images/minhand.png);
+	z-index: 2;
+}
+
+.analog .hour {
+	background: url(images/hourhand.png);
+	z-index: 1;
+}
+
+.title {
+	font-size: 11px;
+	font-weight: bold;
+	color: #333;
+}
+
+.analog .meridiem {
+	margin-top: 90px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+  display: inline-block;
+}
+/*  Bausele sydney clock*/
+.analog1 {
+	position: relative;
+	width: 134px;
+  margin: auto;
+	/*background: url(images/Bausele_YachtingCoal_WatchFace.jpg) no-repeat scroll 13px 10px transparent;*/
+	background: url(images/bausel.jpg) no-repeat scroll 13px 11px transparent;
+	
+	list-style: none;
+}
+
+.analog1,.analog1 .hour,.analog1 .min,.analog1 .sec {
+	height: 150px;
+}
+
+.analog1 .hour,.analog1 .min,.analog1 .sec {
+-webkit-backface-visibility:hidden;
+	position: absolute;
+	width: 5px;
+	top: 0px;
+	left: 65px;
+  padding: 0;
+}
+
+.analog1 .sec {
+
+	/*background: url(images/YachtingCoal_SecondsHand.png);*/
+	background: url(images/sec-bau.png);
+	z-index: 3;
+}
+
+.analog1 .min {
+
+	/*background: url(images/BigHand.png);*/
+	background: url(images/min-bau.png);
+	z-index: 2;
+}
+
+.analog1 .hour {
+/*background: url(images/SmallHand.png);*/
+background: url(images/hr-bau.png);
+
+	z-index: 1;
+}
+.analog1 .meridiem {
+	margin-top: 90px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+  display: inline-block;
+}
+/* default1*/
+/*
+.analog2 {
+	position: relative;
+	width: 134px;
+  margin: auto;
+	background: url(images/wryst_face.jpg) no-repeat scroll 13px 15px transparent;
+	list-style: none;
+}
+*/
+.analog2 {
+	position: relative;
+	width: 134px;
+  margin: auto;
+	background: url(images/Bulovaface.png) no-repeat scroll 13px 15px transparent;
+	list-style: none;
+}
+
+.analog2,.analog2 .hour,.analog2 .min,.analog2 .sec {
+	height: 150px;
+}
+
+.analog2 .hour,.analog2 .min,.analog2 .sec {
+-webkit-backface-visibility:hidden;
+	position: absolute;
+	width: 8px;
+	top: 0px;
+	left:70.5px;
+  padding: 0;
+}
+
+.analog2 .sec {
+	background: url(images/second.png);
+	z-index: 3;
+}
+
+.analog2 .min {
+	background: url(images/minute.png) center;
+	z-index: 2;
+}
+
+.analog2 .hour {
+	background: url(images/hour.png) center;
+	z-index: 1;
+}
+.analog2 .meridiem {
+	margin-top: 90px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+  display: inline-block;
+}
+
+/* New York Jorg Gray*/
+	.analog3 {
+	position: relative;
+	width: 134px;
+    margin: auto;
+	background: url(images/JG_Watchface_WatchPro.jpg) no-repeat scroll 17px 13px transparent;
+	list-style: none;
+}
+
+.analog3,.analog3 .hour,.analog3 .min,.analog3 .sec {
+	height: 150px;
+}
+
+.analog3 .hour,.analog3 .min,.analog3 .sec {
+-webkit-backface-visibility:hidden;
+	position: absolute;
+	width: 10px;
+	top: 0px;
+	left: 69.5px;
+    padding: 0;
+}
+
+.analog3 .sec {
+	background: url(images/JGsec.png);
+	z-index: 3;
+}
+
+.analog3 .min {
+	background: url(images/JG_min.png);
+	z-index: 2;
+}
+
+.analog3 .hour {
+	background: url(images/JGJ-hour.png);
+	z-index: 1;
+}
+.analog3 .meridiem {
+	margin-top: 90px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+  display: inline-block;
+}
+
+
+/* casio Hong Kong */
+
+.analog4 {
+	position: relative;
+	width: 134px;
+    margin: auto;
+	background: url(images/casio_face.png) no-repeat scroll 13px 15px;
+	list-style: none;
+}
+
+.analog4,.analog4 .hour,.analog4 .min,.analog4 .sec {
+	height: 150px;
+}
+
+.analog4 .hour,.analog4 .min,.analog4 .sec {
+-webkit-backface-visibility:hidden;
+	position: absolute;
+	width: 8px;
+	top: 0px;
+	left: 70.5px;
+  padding: 0;
+}
+
+.analog4 .sec {
+	background: url(images/sec.png);
+	z-index: 3;
+}
+
+.analog4 .min {
+	background: url(images/minut.png);
+	z-index: 2;
+}
+
+.analog4 .hour {
+	background: url(images/hr.png);
+	z-index: 1;
+}
+.analog4 .meridiem {
+	margin-top: 90px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+  display: inline-block;
+}
+
+
+/* default 2 */
+
+.analog5 {
+	position: relative;
+	width: 134px;
+  margin: auto;
+	background: url("images/dia2.png") no-repeat scroll 12px 14px transparent;
+	list-style: none;
+}
+
+.analog5,.analog5 .hour,.analog5 .min,.analog5 .sec {
+	height: 150px;
+}
+
+.analog5 .hour,.analog5 .min,.analog5 .sec {
+-webkit-backface-visibility:hidden;
+	position: absolute;
+	width: 8px;
+	top: 0px;
+	left: 70.5px;
+   padding: 0;
+}
+
+.analog5 .sec {
+	background: url(images/sec_03.png);
+	z-index: 3;
+}
+
+.analog5 .min {
+	background: url(images/min_03.png) center;
+	z-index: 2;
+}
+
+.analog5 .hour {
+	background: url(images/hr_03.png) center;
+	z-index: 1;
+}
+.analog5 .meridiem {
+	margin-top: 90px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+  display: inline-block;
+}
+
+
+	.analog8 {
+	    position: relative;
+	    width: 134px;
+        margin: auto;
+	    background: url("images/dia2.png") no-repeat scroll 12px 14px transparent;
+	   list-style: none;
+      }
+
+		.analog8,.analog8 .hour,.analog8 .min,.analog8 .sec {
+			height: 150px;
+		}
+
+		.analog8 .hour,.analog8 .min,.analog8 .sec {
+		-webkit-backface-visibility:hidden;
+			position: absolute;
+			width: 8px;
+			top: 0px;
+			left: 70.5px;
+		   padding: 0;
+		}
+
+		.analog8 .sec {
+			background: url(images/sec_03.png);
+			z-index: 3;
+		}
+
+		.analog8 .min {
+			background: url(images/min_03.png) center;
+			z-index: 2;
+		}
+
+		.analog8 .hour {
+			background: url(images/hr_03.png) center;
+			z-index: 1;
+		}
+		.analog8 .meridiem {
+			margin-top: 90px;
+			font-size: 11px;
+			font-weight: bold;
+			color: #333333;
+		  display: inline-block;
+		}
+
+
+/*defalut 3*/
+
+
+.analog6 {
+	position: relative;
+	width: 143px;
+  margin: auto;
+	background: url("images/TW11_steel.png") no-repeat scroll 22px 14px transparent;
+	list-style: none;
+}
+
+.analog6,.analog6 .hour,.analog6 .min,.analog6 .sec {
+	height: 150px;
+}
+
+.analog6 .hour,.analog6 .min,.analog6 .sec {
+-webkit-backface-visibility:hidden;
+	position: absolute;
+	width: 8px;
+	top: 0px;
+	left:70.5px;
+   padding: 0;
+}
+
+.analog6 .sec {
+	background: url(images/TW11steelsecond.png);
+	z-index: 3;
+}
+
+.analog6 .min {
+	background: url(images/TW11steelminute.png);
+	z-index: 2;
+}
+
+.analog6 .hour {
+	background: url(images/TW11steelhour.png);
+	z-index: 1;
+}
+.analog6 .meridiem {
+	margin-top: 90px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+  display: inline-block;
+}
+
+
+
+
+
+.analog7 {
+	position: relative;
+	width: 134px;
+  margin: auto;
+	background: url(images/Bausele_YachtingCoal_WatchFace.jpg) no-repeat scroll 12px 10px transparent;
+	list-style: none;
+}
+
+.analog7,.analog7 .hour,.analog7 .min,.analog7 .sec {
+	height: 150px;
+}
+
+.analog7 .hour,.analog7 .min,.analog7 .sec {
+	position: absolute;
+	width: 8px;
+	top: 0px;
+	left: 70.5px;
+  padding: 0;
+}
+
+.analog7 .sec {
+	background: url(images/second.png);
+	z-index: 3;
+}
+
+.analog7 .min {
+	background: url(images/minute.png);
+	z-index: 2;
+}
+
+.analog7 .hour {
+	background: url(images/hour.png);
+	z-index: 1;
+}
+.analog7 .meridiem {
+	margin-top: 90px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333333;
+  display: inline-block;
+}
+
+#clock:hover .imgnew, #clock1:hover .imgnew, #clock2:hover .imgnew, #clock3:hover .imgnew, #clock4:hover .imgnew, #clock5:hover .imgnew{display:block;position:absolute;top:10px;left:12px;z-index:50 }
+.clock-wrapper  {position:relative}
+.clock-wrapper .imgnew {display:none;height: 132px;width: 122px;background: #fff;}
+.clock-wrapper .imgnew h1{width:134px !important;text-align:center;}
